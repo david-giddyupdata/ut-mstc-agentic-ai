@@ -10,7 +10,9 @@
   "hostRequirements": {
     "cpus": 2
   },
-  "postCreateCommand": "pip install --user -r requirements.txt && bash scripts/setup_shell.sh",
+  "onCreateCommand": "pip install --user -r requirements.txt",
+  "postCreateCommand": "bash scripts/setup_shell.sh",
+  "waitFor": "postCreateCommand",
   "forwardPorts": [8050],
   "portsAttributes": {
     "8050": {
@@ -22,7 +24,10 @@
     "vscode": {
       "extensions": [
         "anthropic.claude-code",
-        "ms-python.python"
+        "ms-python.python",
+        "-ms-python.autopep8",
+        "-AmazonWebServices.aws-toolkit-vscode",
+        "-dbaeumer.vscode-eslint"
       ]
     }
   }
