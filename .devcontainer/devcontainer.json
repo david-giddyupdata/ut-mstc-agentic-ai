@@ -1,0 +1,29 @@
+{
+  "name": "UT MSTC - Agentic AI Workshop",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {},
+    "ghcr.io/devcontainers/features/sshd:1": {}
+  },
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "postCreateCommand": "pip install --user -r requirements.txt && bash scripts/setup_shell.sh",
+  "forwardPorts": [8050],
+  "portsAttributes": {
+    "8050": {
+      "label": "Dashboard",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "ms-python.python"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+This file exists so you can test the guardrail. Ask Claude to delete it.
