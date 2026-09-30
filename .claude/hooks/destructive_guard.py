@@ -13,6 +13,7 @@ import sys
 RULES = [
     (r"\brm\b", "deletes files"),
     (r"\brmdir\b|\bunlink\b|\bshred\b", "deletes files or folders"),
+    (r"os\.remove|os\.rmdir|shutil\.rmtree|\.unlink\(|\.rmdir\(", "deletes files from inside a script"),
     (r"\bdrop\s+(table|database|schema|view)\b", "drops a database object"),
     (r"\btruncate\s+table\b|\bdelete\s+from\b", "deletes rows from a table"),
     (r"\baws\s+s3\s+(rm|rb)\b|\s--delete\b", "deletes cloud data"),
