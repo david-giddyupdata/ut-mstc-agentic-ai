@@ -6,7 +6,7 @@ Your workspace for the workshop. Everything runs in your browser. Nothing to ins
 
 1. **Make your own copy.** Click **Use this template > Create a new repository**. Name it `my-agentic-workshop`. The visibility setting starts on **Public**: change it to **Private**. Click **Create repository**.
 2. **Add the class key.** Open **github.com > your profile picture > Settings > Codespaces**. In the **Codespace user secrets** section, click **New secret**. Name it `ANTHROPIC_API_KEY` and paste the key from the class email. Under **Repository access**, type `my-agentic` and pick the repository that starts with **your own username** (other people's public repositories can appear in the list too). Click **Add secret**. Do this before step 3.
-3. **Launch your workspace.** In your new repository, click **Code > Codespaces > Create codespace on main**. It opens in a new browser tab. The first launch takes about four to five minutes.
+3. **Launch your workspace.** In your new repository, click **Code > Codespaces > Create codespace on main**. It opens in a new browser tab. The first launch takes about four minutes.
 4. **Check your setup.** When the editor has finished loading, run this in the terminal at the bottom:
 
    ```bash
