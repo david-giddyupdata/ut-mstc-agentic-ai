@@ -24,6 +24,7 @@ When you paste a long prompt into Claude, the first Enter can add a new line ins
 |---|---|
 | `data/monthlysummary.csv` | U.S. flight performance by airport and month, 2020 to 2025 (Bureau of Transportation Statistics) |
 | `data/feb_flights_to_clean_2021.xlsx` | A messy Excel file of February 2021 flights, used in the Cleaning Data exercise |
+| `data/weather/` | Monthly weather (rain, snow, temperatures) for 10 large airports, September 2024 to September 2025, one file per airport. Used in the Combining Weather and Flight Data exercise |
 | `CLAUDE.md` | Standing instructions Claude reads at the start of every session. You fill it in. |
 | `.claude/settings.json` | What Claude may do without asking, plus the guardrail hook |
 | `.claude/hooks/destructive_guard.py` | The guardrail: Claude must ask before deleting anything |
