@@ -19,6 +19,7 @@ RULES = [
     (r"\baws\s+s3\s+(rm|rb)\b|\s--delete\b", "deletes cloud data"),
     (r"\bgit\s+(reset\s+--hard|clean\b|push\b.*--force)", "throws away work in git"),
     (r"\bsudo\b|\bchmod\s+-R\b|\bchown\s+-R\b", "changes system settings"),
+    (r"\b(kill|pkill|killall)\b", "stops running programs, which can close parts of VS Code"),
 ]
 
 try:
