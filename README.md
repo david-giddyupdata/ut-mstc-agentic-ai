@@ -14,9 +14,7 @@ Your workspace for the workshop. Everything runs in your browser. Nothing to ins
    ```
 
    You should see `SETUP VERIFIED`. If you see `SETUP INCOMPLETE` with several packages `MISSING`, setup is still finishing: wait a minute, open a new terminal with the **+** icon, and run the test again.
-5. **Start Claude.** Type `claude` in the terminal and press Enter. (The terminal may suggest typing `copilot`. Ignore that; this workshop uses `claude`.)
-
-When you paste a long prompt into Claude, the first Enter can add a new line instead of sending it. If nothing happens, press Enter again.
+5. **Start Claude.** In the panel on the right side of the window, click the **...** next to **Chat** and choose **Claude Code**. (**Chat** is GitHub Copilot. This workshop uses Claude Code.)
 
 ## What is in this project
 
